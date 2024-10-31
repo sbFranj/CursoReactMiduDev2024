@@ -25,16 +25,7 @@ export function App() {
     useEffect(() => {
         if (!fact) return
         const threeFirstWords = fact.split(" ", 3).join(" ")
-
-        fetch(`https://cataas.com/cat/says/${threeFirstWords}?size=50&color=red&json=true`)
-            .then(res => res.json())
-            .then(response => {
-                const { _id } = response
-                const url = `/cat/${_id}/says/${threeFirstWords}`
-                setImgUrl(url)
-                console.log(URL_IMG_CAT + imgUrl)
-            })
-
+        setImgUrl(`https://cataas.com/cat/says/${threeFirstWords}?size=50&color=red`)
     }, [fact])
 
     return (
@@ -43,7 +34,7 @@ export function App() {
                 <h1>App de gatitos</h1>
 
                 {fact && <p>{fact}</p>}
-                {imgUrl && <img src={URL_IMG_CAT + imgUrl}></img>}
+                {imgUrl && <img src={imgUrl}></img>}
                 <button onClick={handleClick}>Get new fact</button>
             </main>
         </>
