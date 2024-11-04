@@ -1,4 +1,3 @@
-import { useCatFact } from "../hooks/useCatFact";
 import { useCatImage } from "../hooks/useCatImage";
 
 export function CatImage ({fact}){
