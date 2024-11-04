@@ -1,5 +1,5 @@
 import "./App.css"
-import { CatImage } from "./components/catImage"
+import { Image } from "./components/Image"
 import { useCatFact } from "./hooks/useCatFact"
 
 
@@ -17,7 +17,7 @@ export function App() {
                 <button onClick={handleClick}>Get new fact</button>
 
                 {fact && <p>{fact}</p>}
-                <CatImage fact={fact}></CatImage>
+                <Image fact={fact}></Image>
             </main>
         </>
     )
