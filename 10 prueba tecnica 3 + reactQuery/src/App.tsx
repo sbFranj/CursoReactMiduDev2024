@@ -66,7 +66,7 @@ function App() {
 	return (
 		<>
 			<div className="App">
-				<h1>Prueba técnica</h1>
+				<h1>Prueba técnica (React Query)</h1>
 				<header>
 					<button type="button" onClick={toggleColors}>
 						Colorear filas
