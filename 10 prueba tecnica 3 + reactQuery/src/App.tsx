@@ -100,7 +100,7 @@ function App() {
 
 					{!isLoading && !isError && users.length===0 && <p>No hay usuarios</p>}
 
-					{!isLoading && !isError && hasNextPage===true && < button type="button" onClick={async ()=> fetchNextPage()}> Siguiente pagina </button>}
+					{!isLoading && !isError && hasNextPage===true && < button type="button" onClick={async ()=> fetchNextPage()}> Cargar más usuarios </button>}
 				</main>
 			</div>
 		</>
